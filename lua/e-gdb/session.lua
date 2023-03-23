@@ -9,7 +9,7 @@ local function open_window()
         win = vim.api.nvim_get_current_win()
         buf = vim.api.nvim_create_buf(true, true)
         vim.api.nvim_win_set_buf(win, buf)
-        vim.api.nvim_win_set_height(20)
+        vim.api.nvim_win_set_height(win, 20)
 end
 
 function M.launch()
