@@ -5,7 +5,7 @@ local win = nil
 local buf = nil
 
 local function open_window()
-        vim.cmd('hsplit')
+        vim.cmd('split')
         win = vim.api.nvim_get_current_win()
         buf = vim.api.nvim_create_buf(true, true)
         vim.api.nvim_win_set_buf(win, buf)
