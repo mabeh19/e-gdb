@@ -6,6 +6,6 @@ function M.setup()
         vim.api.nvim_create_user_command("EGDBLaunch", 'require("e-gdb").launch()', {})
 end
 
-M.launch = session.launch
+--M.launch = session.launch
 
 return M
